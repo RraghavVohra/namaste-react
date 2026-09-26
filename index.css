@@ -1,4 +1,28 @@
-#heading {
 
-    color : red;
+.header{
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid black;
+    align-items: center;
+}
+
+.logo{
+    width: 200px;
+}
+
+.nav-items{
+    padding: 0px 20px;
+}
+
+.nav-items > ul {
+    font-size: 24px;
+    display: flex;
+    list-style-type: none;
+    gap: 30px;
+    margin: 0;
+}
+
+.nav-items > ul > li {
+    padding: 10px;                /* har item ke andar thoda breathing room */
+    cursor: pointer;
 }
