@@ -21,6 +21,8 @@
   "author": "Raghav Vohra",
   "type": "commonjs",
   "scripts": {
+    "start": "parcel index4.html",
+    "build": "parcel build index4.html",
     "test": "jest"
   },
   "devDependencies": {
