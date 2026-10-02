@@ -24,12 +24,12 @@ const Header = () => {
 };
 
 // RESTAURANT CARD
-const RestaurantCard = () => {
+const RestaurantCard = (props) => {
     return (
         <div className="res-card" style = {{backgroundColor: "#f0f0f0"}}>
             <img className="res-logo" alt="res-logo" src="https://dineout-media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_600,h_400/v1681884314/008781bada99c992ebf23970c7f2f37a.webp" />
-            <h3>Daisy Mae Cantina</h3>
-            <h4>Mexican Coffee House</h4>
+            <h3>{props.resName}</h3>
+            <h4>{props.cuisine}</h4>
             <h4>Khan Market, Delhi</h4>
             <h4>4.0 Stars</h4>
             <h4>Flat 15% off on pre-booking</h4>
@@ -42,7 +42,14 @@ const Body = () => {
         <div className = "body">
           <div className="search">Search</div>
           <div className="res-container">
-            <RestaurantCard /> 
+            <RestaurantCard
+             resName = "Daisy Mae Cantina"
+             cuisine = "Coffee,Shakes,Breads"
+              />
+            <RestaurantCard
+             resName = "KFC"
+             cuisine = "Burger, Fast Food"
+            /> 
             </div>
         </div>
     );
